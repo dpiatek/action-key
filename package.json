@@ -9,9 +9,6 @@
     "type": "git",
     "url": "git@github.com:dpiatek/action-key.git"
   },
-  "keywords": [
-    "boilerplate"
-  ],
   "author": "@dpiatek",
   "license": "MIT",
   "bugs": {
@@ -20,7 +17,6 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-sass": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-preprocess": "~4.0.0",
     "karma-script-launcher": "~0.1.0",
@@ -36,7 +32,6 @@
     "grunt-karma": "~0.6.2",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.4.0",
     "grunt-contrib-concat": "~0.3.0"
   }
 }
