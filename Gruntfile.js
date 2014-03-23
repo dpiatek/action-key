@@ -6,8 +6,8 @@ module.exports = function(grunt) {
 
     watch: {
       src: {
-        files: ['js/**/*.js', 'css/**/*.scss'],
-        tasks: ['jshint', 'sass'],
+        files: ['js/**/*.js'],
+        tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -19,22 +19,6 @@ module.exports = function(grunt) {
         'js/**/*.js',
         'Gruntfile.js'
       ]
-    },
-
-    sass: {
-      src: {
-        files: {
-          'css/main.css': 'css/main.scss'
-        }
-      },
-      build: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          'build/css/main.css': 'css/main.scss'
-        }
-      }
     },
 
     preprocess: {
@@ -70,41 +54,18 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'img/',
-          src: ['*.{png,jpg,gif}'],
-          dest: 'build/img/'
-        }]
-      }
-    },
-
-    concat: {
-      build: {
-        src: [
-          'bower_components/handlebars/handlebars.min.js',
-          'js/main.js'
-        ],
-        dest: 'build/js/main.js'
-      }
-    },
-
     clean: ['build']
 
   });
 
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Tasks
@@ -114,9 +75,7 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'preprocess:build',
-    'imagemin',
-    'concat',
-    'sass:build'
+    'concat'
   ]);
 
 };
