@@ -1,6 +1,5 @@
 {
-  "name": "pup",
-  "private": true,
+  "name": "action-key",
   "dependencies": {
     "angular": "~1.2.15"
   }

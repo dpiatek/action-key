@@ -1,22 +1,21 @@
 {
-  "name": "pup",
+  "name": "action-key",
   "version": "0.0.1",
-  "description": "A boilerplate for static websites.",
-  "main": "index.html",
+  "description": "A directive for binding keyboard shortcuts to actions",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dpiatek/pup.git"
+    "url": "git@github.com:dpiatek/action-key.git"
   },
   "keywords": [
     "boilerplate"
   ],
-  "author": "@dominikpiatek",
+  "author": "@dpiatek",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dpiatek/pup/issues"
+    "url": "https://github.com/dpiatek/action-key/issues"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
