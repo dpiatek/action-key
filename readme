@@ -1,8 +1,4 @@
-pup
----
+action-key
+----------
 
-A boilerplate for web projects.
-
-TODO:
-- full build task
-- dev scripts vs production scripts
+A directive for binding keyboard shortcuts to actions.
